@@ -1,0 +1,103 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::after *::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: josefin sans;
+    font-size: 1.125rem;
+    background-color: rgb(95, 94, 94);
+    
+}
+
+h1, h2, h3, p {
+    margin-top: 0;
+}
+
+a, a:visited {
+    text-decoration: none;
+} 
+
+/*MAIN STYLES*/
+.container {
+    width: 100%;
+    height: 100vh;
+    max-width: 375px;
+    margin-inline: auto;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    padding: 2.5rem 2.25rem;
+    z-index: 0;
+}
+
+.arrow-back svg {
+    display: block;
+    stroke: #fff;
+}
+.welcome {
+    font-size: 2.875rem;
+    line-height: 55px;
+    color: #fff;
+    margin-bottom: 9.625rem;
+}
+
+.arrow-back {
+    display: block;
+    margin-bottom: 4.5rem;
+}
+
+.pink-circle {
+    position: absolute;
+    background: hsla(357, 96%, 79%, 1);
+    height: 398px;
+    width: 398px;
+    left: -163px;
+    top: -292px;
+    border-radius: 50%;
+    z-index: -3;
+}
+
+.purple-circle {
+    position: absolute;
+    background: hsla(313, 29%, 42%, 1);
+    height: 700px;
+    width: 700px;
+    left: -184px;
+    top: -412px;
+    border-radius: 50%;
+    z-index: -4;
+}
+
+.yellot-circle {
+    position: absolute;
+    background: hsla(55, 66%, 69%, 1);
+    height: 398px;
+    width: 398px;
+    left: 235px;
+    top: -16px;
+    border-radius: 50%;
+    z-index: -5;
+}    
+
+.form-email {
+    position: relative;
+}
+
+#email {
+    width: 100%;
+    padding: 1.1875rem 1.875rem;
+    font-size: inherit;
+}
+
+.email-label {
+    position: absolute;
+    top: 19px;
+    left: 30px;
+}
