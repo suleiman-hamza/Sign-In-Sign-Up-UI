@@ -4,7 +4,7 @@ html {
 }
 
 *, *::after *::before {
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 body {
@@ -26,8 +26,8 @@ a, a:visited {
 
 /*MAIN STYLES*/
 .container {
+    box-sizing: border-box;
     width: 100%;
-    height: 100vh;
     max-width: 375px;
     margin-inline: auto;
     background-color: #fff;
@@ -84,20 +84,181 @@ a, a:visited {
     top: -16px;
     border-radius: 50%;
     z-index: -5;
-}    
+}
 
-.form-email {
-    position: relative;
+#email, #password {
+    /* width: 18.9375rem; */
+    width: 100%;
+    /* margin-inline: auto; */
+    padding: 1.1875rem 1.875rem;
+    font-size: inherit;
+    box-sizing: border-box;
+    background: hsla(0, 0%, 0%, 0.1);
+    border: none;
+    border-radius: 20px;
+    color: #000000;
 }
 
 #email {
+    margin-bottom: 1.25rem;
+}
+
+#password {
+    margin-bottom: 1.875rem;
+}
+
+.sign-in {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sign-in span {
+    display: inline;
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.sign-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(313, 29%, 42%, 1);
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+form {
+    margin-bottom: 100px;
+}
+
+.forgot {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sign-up {
+    position: relative;
+    color: #000000;
+    padding: 5px;
+}
+
+.sign-up::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 9px;
+    background-color: hsla(55, 66%, 69%, 1);
+    bottom: 0;
+    left: 0;
+    bottom: 5px;
+    z-index: -1;
+}
+
+.password {
+    position: relative;
+    color: #000000;
+    padding: 5px;
+}
+
+.password::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 9px;
+    background: hsla(357, 96%, 79%, 1);
+    bottom: 0;
+    left: 0;
+    bottom: 5px;
+    z-index: -1;
+}
+/*SIGN IN STYLE ENDS HERE*/
+
+/*SIGN UP STYLE STARTS HERE*/
+
+.container-2 {
+    position: relative;
+    width: 100%;
+    /* height: 100vh; */
+    max-width: 375px;
+    box-sizing: border-box;
+    background: hsla(358, 98%, 83%, 1);
+    padding: 2.5rem 2.25rem;
+    margin-inline: auto;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.welcome-2 {
+    font-size: 2.875rem;
+    line-height: 55px;
+    color: #fff;
+    margin-bottom: 4.625rem;
+}
+
+
+.purple-circle-2 {
+    background: hsla(313, 29%, 42%, 1);
+    position: absolute;
+    height: 700px;
+    width: 700px;
+    left: -284px;
+    top: -414px;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.white-circle {
+    position: absolute;
+    background-color: #fff;
+    height: 398px;
+    width: 459px;
+    left: 154px;
+    top: 579px;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+#name, #email-2, #password-2 {
     width: 100%;
     padding: 1.1875rem 1.875rem;
     font-size: inherit;
+    box-sizing: border-box;
+    background: hsla(0, 0%, 0%, 0.1);
+    border: none;
+    border-radius: 20px;
+    color: inherit;
+    margin-bottom: 1.25rem;
 }
 
-.email-label {
+#password-2 {
+    margin-bottom: 1.875rem;
+}
+
+:is(#name, #email-2, #password-2)::placeholder {
+    color: #fff;
+}
+
+.forgot-2 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.forgot-2 a {
+    position: relative;
+    color: #000000;
+    padding: 5px;
+}
+    
+.forgot-2 a::after {
     position: absolute;
-    top: 19px;
-    left: 30px;
+    content: "";
+    width: 100%;
+    height: 9px;
+    background: hsla(55, 66%, 69%, 1);
+    bottom: 0;
+    left: 0;
+    bottom: 5px;
+    z-index: -1;
 }
